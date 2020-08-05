@@ -12,12 +12,8 @@ let icon =document.getElementById('icon');
 let icon1 =document.getElementById('icon1');
 let icon2 =document.getElementById('icon2');
 let icon3 =document.getElementById('icon3');
-var pattern = new RegExp(/[~`!#$%\^&*+=\-\[\]\\';,/{}|\\":<>\?]/);
-let w = window.innerWidth;
-let h = window.innerHeight;
+let pattern = new RegExp(/[~`!#$%\^&*+=\-\[\]\\';,/{}|\\":<>\?]/);
 
-console.log(w);
-console.log(general);
 
 form.addEventListener('submit', (e) => {
     event.preventDefault();
@@ -49,7 +45,7 @@ form.addEventListener('submit', (e) => {
                 
     }
 
-    if (pattern.test(email)) {       
+    if (pattern.test(email.value)) {       
         error3.style = 'visibility:visible';
         
         icon2.style = 'visibility:visible';
