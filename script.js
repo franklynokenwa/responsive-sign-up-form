@@ -45,7 +45,7 @@ form.addEventListener('submit', (e) => {
                 
     }
 
-    if (pattern.test(email.value)) {       
+    if (pattern.test(email.value) || email.value=='' || email.value == null) {       
         error3.style = 'visibility:visible';
         
         icon2.style = 'visibility:visible';
