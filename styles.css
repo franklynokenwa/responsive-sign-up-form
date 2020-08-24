@@ -154,63 +154,90 @@ form p{
      color: hsl(228, 45%, 44%); 
 }
 
-@media (max-width:600px) {
+@media (max-width:375px) {
     .form-description{
-        position: relative;
         top: 2rem;
-        width: 100rem;
-        color: white;        
+        padding: 0 5rem;
+        left: -4rem; 
+        margin-bottom: 18rem;      
     }
     
+    h1, p{
+        padding-left: -1rem;
+        width: 20rem;
+    }
+    h1{
+        text-align: center;
+    }
     
     .form-details{
         display:flex;
         flex-direction: column;
         position: relative;
-        top: 33rem;
-        right: 4rem;        
+        top: 24rem;
+        left: -29rem;        
         width: 100%;
+        
     }
     .form-promo{
-        width: 25rem;
+        width: 20rem;
+        padding: 2rem 0;
+        font-size: 26px;
+
+    }
+    .form-promo h6{
+        text-align: center;
     }
 
     form{
-        width: 25rem;
+        width: 20rem;
+    }
+
+    input{
+    height:2.5rem;
+    width: 80%;  
+    padding: 1rem 0;  
     }
 
     #icon{
         position: absolute;
-        top: 7.4rem;
+        top: 12rem;
         right: 4rem;
         visibility: hidden;      
     }
     #icon1{
         position: absolute;
-        top: 12rem;
+        top: 19rem;
         right: 4rem;
         visibility: hidden;
     }
     #icon2{
         position: absolute;
-        top: 17rem;
+        top: 26rem;
         right: 4rem;
         visibility: hidden;
     }
     #icon3{
         position: absolute;
-        top: 21.8rem;
+        top: 32.5rem;
         right: 4rem;
         visibility: hidden;
     }
+    #submit{
+    width: 86%;
+    height: 4rem;
+}
 
     .attribution {
         font-size: 11px;
         text-align: center;
         margin-top: 40rem;
+        position: relative;
+        top: 1rem;
    }
        .attribution a { 
         color: hsl(228, 45%, 44%); 
+
    }
 
 }
